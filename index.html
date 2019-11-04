@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <title>Html to Excel</title>
+</head>
+<body>
+    <div class="conatainer">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>Ikwegbu George Chinedu</td>
+                    <td>g.ikwegbu@gmail.com</td>
+                    <td>08101570258</td>
+                    <td>Umudike</td>
+                </tr>
+                <tr> <td>1</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>2</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>3</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>4</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>5</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>6</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>7</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>8</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>9</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>10</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>11</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>12</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>13</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>14</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>15</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>16</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>17</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>18</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>19</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>20</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+                <tr> <td>21</td> <td>Ikwegbu George Chinedu</td> <td>g.ikwegbu@gmail.com</td> <td>08101570258</td> <td>Umudike</td>  </tr>
+            </tbody>
+            <tfoot class="noExl">
+                <tr>
+                    <th>S/N</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p></p>
+
+        <button class="btn btn-success" id="btn">Export To Excel</button>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.table2excel.js"></script>
+    <script type="text/javascript">
+            $('document').ready(function(){
+                $('#btn').click(function(){
+                    $('.table').table2excel({
+                        exclude: ".noExl",
+                        name: 'ARQHAG',
+                        filename: 'Arqhaag'
+                    });
+                });
+            });
+    </script>
+</body>
+</html>
